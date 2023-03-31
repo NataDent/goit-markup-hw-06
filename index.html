@@ -493,8 +493,8 @@
           </svg>
         </button>
         <p class="modal-title">Leave your contacts and we will call you back</p>
-        <form class="modal-form">
-            <label
+        <form class="modal-form" name="signup_form">
+            <label for="user-name" class="label-text"
               >Name
               <input
                 class="modal-input"
@@ -503,7 +503,7 @@
                 placeholder=""
               />
             </label>
-            <label
+            <label for="user-phone" class="label-text"
               >Phone
               <input
                 class="modal-input"
@@ -512,7 +512,7 @@
                 placeholder=""
               />
             </label>
-            <label
+            <label for="user-email" class="label-text"
               >Email
               <input
                 class="modal-input"
@@ -521,18 +521,16 @@
                 placeholder=""
               />
             </label>
-            <label
+            <label class="label-text"
               >Comment
-              <textarea class="footer-form-comment" rows="10">
-              Text input
-            </textarea
-              >
+              <textarea class="footer-form-comment" placeholder="Text input">Text input
+            </textarea>
             </label>
           <div class="checkbox-wrap">
             <input type="checkbox" />
             <p class="checkbox-text">
               I accept the terms and conditions of the
-              <span class="checkbox-link">Privacy Policy</span>
+              <a class="checkbox-link">Privacy Policy</a>
             </p>
           </div>
           <button type="submit" class="modal-btn">Send</button>

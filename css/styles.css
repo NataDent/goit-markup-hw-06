@@ -552,8 +552,9 @@ img {
 .footer-form {
   display: flex;
   flex-direction: column;
+
   width: 453px;
-  /* height: 80px; */
+  height: 80px;
   margin-left: 80px;
 }
 
@@ -564,9 +565,8 @@ img {
 
 .input-box {
   display: block;
-
-  width: 100%;
-  height: 100%;
+  width: 264px;
+  height: 40px;
   font-family: inherit;
   font-size: 12px;
   line-height: 2;
@@ -591,6 +591,7 @@ img {
   gap: 16px;
   padding: 8px 24px;
   margin-left: 24px;
+  transition: transform var(--tra);
 }
 
 .input-btn:hover {
@@ -787,6 +788,12 @@ img {
   color: #2e2f42;
   margin-bottom: 16px;
 }
+.label-text {
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: #8e8f99;
+}
 
 .modal-input {
   width: 100%;
@@ -794,7 +801,9 @@ img {
   border: 1px solid #2e2f42;
   border-radius: 4px;
   margin-bottom: 8px;
+  padding: 8px 16px;
 }
+
 .modal-input:nth-last-child() {
   margin-bottom: 5px;
 }
@@ -802,9 +811,17 @@ img {
 .footer-form-comment {
   width: 100%;
   height: 120px;
+  padding: 8px 16px;
   border: 1px solid #2e2f42;
   border-radius: 4px;
   color: inherit;
+}
+
+.footer-form-comment::placeholder {
+  font-size: 12px;
+  line-height: 1.17em;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
 }
 
 .checkbox-wrap {
@@ -823,4 +840,20 @@ img {
   text-decoration: solid;
 }
 .modal-btn {
+  display: block;
+  width: 169px;
+  height: 56px;
+  margin: 0 auto;
+  padding: 16px 32px;
+  color: #ffffff;
+  background: #4d5ae5;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
+  border-radius: 4px;
+  transition: transform var(--tra), color var(--tra),
+    background-color var(--tra), box-shadow var(--tra);
+}
+
+.modal-btn:is(:hover, :focus) {
+  background-color: var(--second-background-color);
 }
