@@ -550,17 +550,16 @@ img {
 }
 
 .footer-form {
-  display: flex;
-  flex-direction: column
+  display: block;
   width: 453px;
-  height: 80px;
+  height: 40px;
   margin-left: 80px;
 }
 
-/* .footer-form-wrap {
+.footer-form-wrap {
   display: flex;
   height: 40px;
-} */
+}
 
 .input-box {
   display: block;
