@@ -561,7 +561,7 @@ img {
   height: 40px;
 }
 
-.footer-input-box {
+.footer-mail {
   display: block;
   width: 264px;
   height: 40px;
@@ -570,8 +570,7 @@ img {
   line-height: 2;
   letter-spacing: 0.04em;
   padding-left: 16px;
-
-  border-color: #ffffff;
+  background-color: transparent;
   border: 1px solid #ffffff;
   border-radius: 4px;
 }
