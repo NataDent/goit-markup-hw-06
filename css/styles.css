@@ -551,8 +551,7 @@ img {
 
 .footer-form {
   display: flex;
-  flex-direction: column;
-
+  flex-direction: column
   width: 453px;
   height: 80px;
   margin-left: 80px;
