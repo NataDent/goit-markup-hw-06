@@ -561,7 +561,7 @@ img {
   height: 40px;
 }
 
-.input-box {
+.footer-input-box {
   display: block;
   width: 264px;
   height: 40px;
@@ -569,9 +569,9 @@ img {
   font-size: 12px;
   line-height: 2;
   letter-spacing: 0.04em;
-  background-color: transparent;
   padding-left: 16px;
-  color: #ffffff;
+
+  border-color: #ffffff;
   border: 1px solid #ffffff;
   border-radius: 4px;
 }
@@ -608,12 +608,12 @@ img {
   color: inherit;
 }
 
-.footer-form-comment::placeholder {
+/* .footer-form-comment::placeholder {
   font-size: 12px;
   line-height: 1.17em;
   letter-spacing: 0.04em;
   color: rgba(46, 47, 66, 0.4);
-}
+} */
 
 /**--------------ПОРТФОЛИО-----------*/
 .portfolio {
@@ -754,8 +754,8 @@ img {
   transform: translate(-50%, -50%);
   padding: 24px;
   display: block;
-  max-width: 408px;
-  max-height: 584px;
+  min-width: 408px;
+  min-height: 584px;
   background-color: #fcfcfc;
   border-radius: 4px;
 }
