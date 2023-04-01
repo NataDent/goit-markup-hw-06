@@ -599,6 +599,21 @@ img {
 .footer-form-icon {
   fill: #ffffff;
 }
+.footer-form-comment {
+  width: 100%;
+  height: 120px;
+  padding: 8px 16px;
+  border: 1px solid #2e2f42;
+  border-radius: 4px;
+  color: inherit;
+}
+
+.footer-form-comment::placeholder {
+  font-size: 12px;
+  line-height: 1.17em;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+}
 
 /**--------------ПОРТФОЛИО-----------*/
 .portfolio {
@@ -786,6 +801,13 @@ img {
   color: #2e2f42;
   margin-bottom: 16px;
 }
+
+.form-container {
+  width: 100%;
+  margin-bottom: 8px;
+  outline: none;
+}
+
 .label-text {
   font-size: 12px;
   line-height: 14px;
@@ -793,29 +815,53 @@ img {
   color: #8e8f99;
 }
 
+.input-box {
+  display: flex;
+  align-items: center;
+  width: 360px;
+  height: 40px;
+  padding: 8px 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+}
+
+.modal-icon-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 18px;
+  height: 24px;
+  position: absolute;
+}
+
+.modal-icon {
+  top: 14px;
+  left: 19px;
+}
+
 .modal-input {
   width: 100%;
-  height: 40px;
-  border: 1px solid #2e2f42;
-  border-radius: 4px;
-  margin-bottom: 8px;
-  padding: 8px 16px;
+  height: 100%;
+  border: none;
+  margin-left: 22px;
+  outline: transparent;
+  transition: transform var(--tra);
 }
 
-.modal-input:nth-last-child() {
-  margin-bottom: 5px;
+.modal-input:focus {
+  border-color: #4d5ae5;
 }
 
-.footer-form-comment {
-  width: 100%;
+.modal-input:focus + .modal-icon {
+  fill: #4d5ae5;
+}
+
+.comment {
+  outline: transparent;
   height: 120px;
-  padding: 8px 16px;
-  border: 1px solid #2e2f42;
-  border-radius: 4px;
-  color: inherit;
 }
 
-.footer-form-comment::placeholder {
+.input-box.comment::placeholder {
   font-size: 12px;
   line-height: 1.17em;
   letter-spacing: 0.04em;

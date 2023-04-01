@@ -491,48 +491,82 @@
             <use href="./images/icons.svg#icon-cross"></use>
           </svg>
         </button>
+
         <p class="modal-title">Leave your contacts and we will call you back</p>
+
         <form class="modal-form" name="signup_form">
-            <label for="user-name" class="label-text">Name</label>
-              
+         <div class="form-container"> 
+          <label for="user-name" class="label-text">Name</label>
+            <div class="input-box">
               <input
                 class="modal-input"
+                id="user-name"
                 type="text"
                 name="user-name"
                 placeholder=""
                 required
               />
-            
+              <div class="modal-icon-wrap">
+              <svg class="modal-icon" width="12" height="12">
+                <use href="./images/icons.svg#icon-Vector-1"></use>
+              </svg>
+              </div>
+            </div>
+          </div>
+          <div class="form-container">
             <label for="user-phone" class="label-text">Phone</label>
-              
+               <div class="input-box">
               <input
                 class="modal-input"
+                id="user-phone"
                 type="tel"
                 name="user-phone"
                 placeholder=""
                 required
               />
-           
+               <div class="modal-icon-wrap">
+              <svg class="modal-icon" width="13" height="13">
+                <use href="./images/icons.svg#icon-Vector-2"></use>
+              </svg>
+              </div>
+              </div>
+           </div>
+            <div class="form-container">
             <label for="user-email" class="label-text" >Email</label>
-             
+              <div class="input-box">
               <input
                 class="modal-input"
+                id="user-email"
                 type="email"
                 name="user-email"
                 placeholder=""
                 required
               />
-           
-            <label for="Comment" class="label-text">Comment</label>
+               <div class="modal-icon-wrap">
+              <svg class="modal-icon" width="15" height="12">
+                <use href="./images/icons.svg#icon-Vector-3"></use>
+              </svg>
+              </div>
+              </div>
+           </div>
+
+            <div class="form-container">
+            <label for="comment" class="label-text">Comment</label>
               
-              <textarea class="footer-form-comment" placeholder="Text input">Text input
-            </textarea>
+              <textarea class="input-box comment" 
+              placeholder="Text input"
+              id="comment"></textarea>
+            </div>
            
           <div class="checkbox-wrap">
             <input type="checkbox" />
-            <p class="checkbox-text">
+            <p class="checkbox-text"><span class="checkbox-area">
+              <svg class="checkbox-icon" width="10" height="8">
+                <use href="./images/icons.svg#icon-check"></use>
+              </svg>
+            </span>
               I accept the terms and conditions of the
-              <a class="checkbox-link">Privacy Policy</a>
+               <a href="#" class="checkbox-link">Privacy Policy</a>
             </p>
           </div>
           <button type="submit" class="modal-btn">Send</button>
