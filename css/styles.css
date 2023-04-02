@@ -73,6 +73,19 @@ img {
   color: var(--second-background-color);
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /**------------- HEADER------------ */
 
 .header {
@@ -753,8 +766,8 @@ img {
   transform: translate(-50%, -50%);
   padding: 24px;
   display: block;
-  min-width: 408px;
-  min-height: 584px;
+  max-width: 408px;
+  max-height: 584px;
   background-color: #fcfcfc;
   border-radius: 4px;
 }
@@ -763,9 +776,10 @@ img {
   display: inline-block;
   padding: 0px;
   width: 360px;
-  height: 325px;
-  left: 540px;
-  top: 203px;
+  height: 336px;
+  gap: 8px;
+  /* left: 540px;
+  top: 203px; */
   color: #8e8f99;
 }
 
@@ -857,7 +871,7 @@ img {
 
 .modal-comment {
   outline: transparent;
-  width: 360px;
+  width: 100%;
   height: 120px;
   resize: none;
   padding: 8px 16px;
@@ -872,21 +886,54 @@ img {
   color: rgba(46, 47, 66, 0.4);
 }
 
-.checkbox-wrap {
+/* .checkbox-wrap {
   display: flex;
   width: 100%;
   height: 16px;
   margin-bottom: 24px;
-}
-.checkbox-text {
+} */
+
+/* .modal-check:checked + .check-text::before {
+  background-color: #4d5ae5;
+  border: none;
+  background-image: url(../images/icons.svg#icon-check);
+} */
+
+.check-text {
+  display: flex;
+  gap: 5px;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
-  margin-left: 8px;
+  color: #8e8f99;
 }
-.checkbox-link {
-  text-decoration: solid;
+
+.check-text span {
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: transparent;
 }
+
+.modal-check:checked + .check-text span {
+  background-color: #4d5ae5;
+  border: none;
+  fill: #ffffff;
+}
+
+/* .check-text::before {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+} */
+
 .modal-btn {
   display: block;
   width: 169px;
